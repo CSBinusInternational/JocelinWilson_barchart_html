@@ -1,2 +1,7 @@
 # JocelinWilson_barchart_html
-Link = 
+Home page link = 
+Gender Graph link =
+Age Graph link =
+Siblings Graph Link = 
+Parch Graph Link =
+Embarked Graph Link = 
