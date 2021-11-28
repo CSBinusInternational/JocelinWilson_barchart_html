@@ -1,0 +1,151 @@
+header{
+    text-align: center;
+    color: #353535;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Bahnschrift Light';
+    letter-spacing: 3px;
+    padding: 30px;
+}
+body {
+    background-color: #e1ddda;
+    font-family: 'Bahnschrift Light';
+    font-size: 25px;
+    font-weight: bold;
+    color: #353535;
+  }
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+.back{
+    width: 50px; 
+    height: 50px;
+    float:left;
+    padding: 5px;
+}
+
+.graphlogo {
+    padding-top: 3%;
+}
+
+.Gender {
+    float: left;
+    margin-left: 20%;
+}
+.Age {
+    float: right;
+    margin-right: 20%;
+}
+.Siblings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.Parch {
+    float: left;
+    margin-left: 20%;
+    padding: 1%;
+}
+.Embark {
+    float: right;
+    margin-right: 20%;
+    padding: 1%;
+}
+
+.stats {
+    margin-left: 8%;
+    padding-top: 1%;
+}
+
+.Colouricon {
+    width: 10px;
+    height: 10px
+}
+
+.gendergraph {
+    width: 300px;
+	height: 300px;
+	border-radius: 50%;
+    background: conic-gradient(#ffdcfe 0deg 189.47deg, #66d3fd 189.47deg  360deg);
+    margin: auto;
+}
+
+.embarkgraph {
+    width: 300px;
+	height: 300px;
+	border-radius: 50%;
+    background: conic-gradient(#7c7c7c 0deg 142.11deg, #FFD700 142.11deg  360deg);
+    margin: auto;
+}
+
+
+.grid{
+    color: #686565;
+    font: 15px;
+}
+.agegraph .chart-wrap{
+    height: 550px;
+    width: 500px;
+}
+.spgraph .chart-wrap{
+    height: 350px;
+    width: 500px;
+}
+.chart-wrap .grid{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    background: repeating-linear-gradient(90deg,transparent,transparent 19.7%, #595757 20%);
+}
+.chart-wrap .bar{
+    width: var(--bar-value);
+    height: 80px;
+    background-color: #a08e7d;
+    margin: 30px 0;
+    border-radius: 0 3px 3px 0;
+}
+.agegraph .chart-wrap.vertical .grid {
+    transform: translateY(-175px) translateX(175px) rotate(0deg);
+}
+.spgraph .chart-wrap.vertical .grid {
+    transform: translateY(-120px) translateX(175px) rotate(0deg);
+}
+.chart-wrap .bar::before {
+    content: attr(numberofpeople-data);
+    display: inline-block;
+    padding: 10px;
+    margin-left: -100px;
+}
+.agegraph .chart-wrap .grid::before {
+    content: '0';
+    position: absolute;
+    left: -5px;
+    top: 580px;
+}
+.spgraph .chart-wrap .grid::before {
+    content: '0';
+    position: absolute;
+    left: -5px;
+    top: 370px;
+}
+.agegraph .chart-wrap .grid::after {
+    content: '20';
+    position: absolute;
+    left: 490px;
+    top: 580px;
+}
+.spgraph .chart-wrap .grid::after {
+    content: '30';
+    position: absolute;
+    left: 490px;
+    top: 370px;
+}
+.agegraph, .spgraph {
+    padding-left: 30%;
+    font-size: 20px;
+}
